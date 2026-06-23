@@ -1,5 +1,5 @@
 ---
-name: tpsreport-skill
+name: tpsreport-knowledge-base-generation
 description: Builds, enriches, lints, and syncs TPSReport Obsidian knowledge bases with Graph RAG frontmatter. Use when authoring KB folders, YAML metadata, kb_lint.py validation, or TPSReport plugin push workflows.
 metadata:
   author: Augmentable.ai

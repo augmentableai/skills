@@ -1,0 +1,20 @@
+{
+  "name": "tpsreport-knowledge-base-generation",
+  "version": "1.2.0",
+  "description": "TPSReport by Augmentable.ai — agent skill for Obsidian knowledge base generation with Graph RAG frontmatter and kb_lint.py.",
+  "author": "Augmentable.ai",
+  "homepage": "https://tpsreport.pro",
+  "repository": "https://github.com/augmentableai/skills",
+  "tags": [
+    "tpsreport",
+    "augmentable",
+    "obsidian",
+    "knowledge-base",
+    "rag",
+    "graph-rag",
+    "frontmatter",
+    "cursor",
+    "agent-skill"
+  ],
+  "platforms": ["cursor", "claude-code", "codex"]
+}
