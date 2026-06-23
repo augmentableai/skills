@@ -3,7 +3,7 @@ name: tpsreport-knowledge-base-generation
 description: Builds, enriches, lints, and syncs TPSReport Obsidian knowledge bases with Graph RAG frontmatter. Use when authoring KB folders, YAML metadata, kb_lint.py validation, or TPSReport plugin push workflows.
 metadata:
   author: Augmentable.ai
-  brand: TPSReport by Augmentable.ai
+  product: TPSReport
 ---
 
 # TPSReport KB Skill
@@ -41,7 +41,7 @@ Fill RAG frontmatter using exact key names from the TPSReport plugin (`summary`,
 ### Phase 4 — Validate
 
 ```bash
-python scripts/kb_lint.py path/to/Your_KB/
+python scripts/kb_lint.py YOUR_KB_FOLDER/
 ```
 
 Fix every error; re-run until exit 0. Contract: `references/metadata-contract.yaml`.
