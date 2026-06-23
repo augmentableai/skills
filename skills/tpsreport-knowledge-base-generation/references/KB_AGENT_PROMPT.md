@@ -58,7 +58,7 @@ Add when relevant: `canonical_for`, `defers_to` (values = **file slugs**), `life
 ### Phase 4 — Validate (non-negotiable)
 Run until exit code 0:
 ```bash
-python .cursor/skills/tpsreport-knowledge-base-generation/kb_lint.py [Your_Vault]/[Folder_Name]/
+python .cursor/skills/tpsreport-knowledge-base-generation/references/kb_lint.py [Your_Vault]/[Folder_Name]/
 ```
 Fix every **error**; address **warnings**. Re-run until clean. Do not declare done while linter is red.
 
@@ -96,13 +96,13 @@ Begin by reading the skill, proposing the section map for **[TOPIC]**, then impl
 
 ```bash
 # Lint the KB (must exit 0)
-python .cursor/skills/tpsreport-knowledge-base-generation/kb_lint.py path/to/Your_KB/
+python .cursor/skills/tpsreport-knowledge-base-generation/references/kb_lint.py path/to/Your_KB/
 
 # Strict mode (warnings = failure)
-python .cursor/skills/tpsreport-knowledge-base-generation/kb_lint.py path/to/Your_KB/ --strict
+python .cursor/skills/tpsreport-knowledge-base-generation/references/kb_lint.py path/to/Your_KB/ --strict
 
 # JSON output for programmatic fix loops
-python .cursor/skills/tpsreport-knowledge-base-generation/kb_lint.py path/to/Your_KB/ --json
+python .cursor/skills/tpsreport-knowledge-base-generation/references/kb_lint.py path/to/Your_KB/ --json
 ```
 
 ---

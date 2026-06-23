@@ -54,6 +54,6 @@ Companion classifiers: `index_type`, `guidance_type`.
 
 | Audience | Tool | Python? |
 |----------|------|---------|
-| Authoring agent | [kb_lint.py](../scripts/kb_lint.py) | Yes — dev/CI only |
+| Authoring agent | [kb_lint.py](kb_lint.py) | Yes — dev/CI only |
 | End client | Obsidian plugin Gatekeeper | No |
 | Server | backend `/validate` on push | Server-side |

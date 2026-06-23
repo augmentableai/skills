@@ -40,7 +40,7 @@ Phase 6  Test & Iterate
 ## Phase 4 — Validate
 
 ```bash
-python scripts/kb_lint.py <kb-folder>
+python references/kb_lint.py <kb-folder>
 ```
 
 Fix every error; re-run until exit 0. The plugin Gatekeeper enforces the same rules at sync.

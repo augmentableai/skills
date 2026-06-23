@@ -18,8 +18,8 @@ augmentableai/skills/
 └── skills/
     └── tpsreport-knowledge-base-generation/
         ├── SKILL.md
-        ├── scripts/kb_lint.py
-        └── references/
+        ├── references/kb_lint.py
+        └── evals/evals.json
     └── (future-skill-here/)
 ```
 
@@ -27,13 +27,15 @@ augmentableai/skills/
 
 **Repo:** `augmentableai/skills`
 
-**Direct URL:**
+**Direct URL (try this if repo import fails silently):**
 `https://raw.githubusercontent.com/augmentableai/skills/main/skills/tpsreport-knowledge-base-generation/SKILL.md`
+
+**Important:** [Connect GitHub](https://agentskill.sh) in your account settings before importing org repos (`augmentableai/*`). The UI often shows "failed" with no error when GitHub is not linked.
 
 ## Validate a KB
 
 ```bash
-python skills/tpsreport-knowledge-base-generation/scripts/kb_lint.py /path/to/Your_KB/
+python skills/tpsreport-knowledge-base-generation/references/kb_lint.py /path/to/Your_KB/
 ```
 
 ## License
