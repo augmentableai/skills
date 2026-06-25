@@ -13,8 +13,7 @@
     "rag",
     "graph-rag",
     "frontmatter",
-    "cursor",
     "agent-skill"
   ],
-  "platforms": ["cursor", "claude-code", "codex"]
+  "platforms": ["claude-code", "codex"]
 }
