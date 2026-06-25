@@ -11,7 +11,7 @@ description: Builds, enriches, lints, and syncs TPSReport Obsidian knowledge bas
 
 Use this skill when:
 - seeding or expanding a TPSReport knowledge base in Obsidian
-- enriching YAML frontmatter (`summary`, `keywords`, `hyde_questions`, `retrieval_hint`)
+- enriching YAML frontmatter (`summary`, `keywords`, `hyde_questions`, `retrieval_hint`, `description`, `seo_title`, `og_image`)
 - validating metadata before push
 - mapping folders and syncing via the TPSReport Obsidian plugin
 - assessing KB coverage, duplicates, or retrieval quality after push
@@ -21,8 +21,8 @@ Use this skill when:
 When activated, manage the full KB lifecycle: scope, seed, generate, enrich, validate, push, iterate.
 
 1. Read `00_CONTEXT.md` for topic, audience, voice, and glossary.
-2. Fill RAG frontmatter using exact TPSReport plugin key names. See `references/METADATA.md`.
-3. Validate with `python references/kb_lint.py YOUR_KB_FOLDER/` until exit 0.
+2. Fill RAG + **web SEO** frontmatter using exact TPSReport plugin key names. See `references/METADATA.md`.
+3. Validate with `python references/kb_lint.py YOUR_KB_FOLDER/` until exit 0 (includes `description` and RAG core).
 4. User maps folder and syncs via the Obsidian plugin. Never push without explicit approval.
 5. Test agent questions after push; fix under-retrieval and re-validate.
 
@@ -45,4 +45,6 @@ When activated, manage the full KB lifecycle: scope, seed, generate, enrich, val
 - Synonym keys TPSReport ignores (`questions` instead of `hyde_questions`)
 - Generic keywords that match everything
 - Missing negative clause in `retrieval_hint`
+- Missing `description` on content docs (web SEO)
+- Using `summary` instead of a dedicated meta `description`
 - Pushing before lint exits 0
